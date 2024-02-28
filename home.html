@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="./addingSum.js"></script>
+  <title>Home Page</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;/
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .header {
+      width: 100%;
+      height: 50px;
+      background-color: #1abc9c;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .header i {
+      font-size: 24px;
+      color: white;
+    }
+    .header a {
+      text-decoration: none;
+      color: white;
+    }
+    .form {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: white;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    input[type=submit] {
+      background-color: #1abc9c;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#"></a><i class="home"></i> Home</a>
+    <a href="#"><i class="user"></i> About Me</a>
+    <a href="#"><i class="add"></i> Address</a>
+    <a href="#"><i class="contact"></i> Contact</a>
+  </div>
+  <div class="form">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <label for="age">Age:</label>
+      <select id="age" required>
+        <option>Select your age</option>
+        <option>18-25</option>
+        <option>26-35</option>
+        <option>36-45</option>
+        <option>46-55</option>
+        <option>56+</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
